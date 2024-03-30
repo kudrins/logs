@@ -1,0 +1,10 @@
+---
+vcenter_hostname: 10.100.10.1
+vcenter_username: administrator@vsphere.local
+vcenter_password: password
+
+servers:
+  - { template: t_centos8, name: centos_web, memory_mb: 4096, ip: 10.100.11.111, hostname: centos-web }
+  - { template: t_centos8, name: centos_log, memory_mb: 4096, ip: 10.100.11.112, hostname: centos-log }
+  - { template: t_ubuntu,  name: ubuntu_elk, memory_mb: 8192, ip: 10.100.11.113, hostname: ubuntu-elk }
+

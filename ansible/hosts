@@ -1,0 +1,17 @@
+[centos_web]
+web ansible_host=10.100.11.111
+[centos_web:vars]
+ansible_user=root
+ansible_ssh_pass=password
+
+[centos_log]
+log ansible_host=10.100.11.112
+[centos_log:vars]
+ansible_user=root
+ansible_ssh_pass=password
+
+[ubuntu_elk]
+elk ansible_host=10.100.11.113
+[ubuntu_elk:vars]
+ansible_user=root
+ansible_ssh_pass=password
